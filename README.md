@@ -1,10 +1,10 @@
 # CV_Robot_MCP
 
-Utilize the VLM in the [CV_MCP_Server](https://huggingface.co/spaces/CV_MCP_Server) HuggingFace Space to "see" the objects through the camera of the robot.
+Utilize the VLM in the [CV_MCP_Server](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server) HuggingFace Space to "see" the objects through the camera of the robot.
 
 ## Overview
 
-CV_Robot_MCP is a Python-based project designed to enable a robot to visually interpret its environment by integrating Vision-Language Models (VLMs). The system communicates with the [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/CV_MCP_Server) to analyze images captured by the robot's camera and provide meaningful object descriptions.
+CV_Robot_MCP is a Python-based project designed to enable a robot to visually interpret its environment by integrating Vision-Language Models (VLMs). The system communicates with the [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server) to analyze images captured by the robot's camera and provide meaningful object descriptions.
 
 ## Features
 
@@ -16,8 +16,8 @@ CV_Robot_MCP is a Python-based project designed to enable a robot to visually in
 
 ### Prerequisites
 
-- Python 3.7+
-- Access to the [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/CV_MCP_Server)
+- Python 3.10+
+- Access to the [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server)
 - Robot hardware with camera support (optional for testing with sample images)
 
 ### Installation
@@ -56,5 +56,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Acknowledgements
 
-- [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/CV_MCP_Server)
+- [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server)
 - HuggingFace for hosting the VLM deployment
+- VLM used in the HF Space: Qwen2.5-VL-7B-Instruct
