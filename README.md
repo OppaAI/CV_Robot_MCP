@@ -6,8 +6,8 @@ Utilize the VLM in the [CV_MCP_Server](https://huggingface.co/spaces/MCP-1st-Bir
 
 CV_Robot_MCP is a Python-based project designed to enable a robot to visually interpret its environment by integrating Vision-Language Models (VLMs). The system communicates with the [CV_MCP_Server HuggingFace Space](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server) to analyze images captured by the robot's camera and provide meaningful object descriptions.
 
-[![Watch Demo](https://img.icons8.com/ios-filled/50/000000/video.png)](https://photos.app.goo.gl/guxui1EsdPNoL4mw7)
-
+🎬 Watch the demo video:
+![Demo Video](./assets/demo.gif)
 
 
 ## Features
