@@ -45,7 +45,7 @@ pip install -r requirements.txt
 1. Start your robot and ensure the camera is functional.
 2. Run the main script to capture images and send them to the CV_MCP_Server:
     ```bash
-    python cv_robot_MCP.py
+    python cv_robot.py
     ```
 3. View the object descriptions returned by the VLM.
 
