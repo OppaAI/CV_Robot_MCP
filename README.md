@@ -8,7 +8,10 @@ CV_Robot_MCP is a Python-based project designed to enable a robot to visually in
 
 ## 🎬 Demo video
 
+🎬 Watch the demo video [here](https://photos.app.goo.gl/guxui1EsdPNoL4mw7)
+
 ![Demo Video](./demo.gif)
+
 
 
 ## Features
