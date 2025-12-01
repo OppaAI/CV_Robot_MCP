@@ -139,7 +139,8 @@ def start_stream():
     Capture frames from a webcam and send them to the MCP server for real-time VLM analysis.
     Displays results in console as a Rich table.
     """
-    cap = cv2.VideoCapture(2)  # Open camera (device 2)
+    # Open camera (choose device 0 for default; my robot uses device 2)
+    cap = cv2.VideoCapture(2)  
     if not cap.isOpened():
         console.print("[bold red]Camera not opened.[/bold red]")
         return
