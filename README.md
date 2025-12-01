@@ -40,6 +40,8 @@ Install Python requirements:
 pip install -r requirements.txt
 ```
 
+Generate a HuggingFace token and enter it into the .env file
+
 ### Usage
 
 1. Start your robot and ensure the camera is functional.
