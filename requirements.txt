@@ -2,3 +2,6 @@ opencv-python
 python-dotenv
 rich
 fastmcp
+gtts
+sounddevice
+soundfile

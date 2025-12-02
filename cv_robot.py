@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 from rich.console import Console
 from rich.table import Table
 from rich import box
+from gtts import gTTS
+import sounddevice as sd
+import soundfile as sf
 
 # -------------------------------
 # Load environment variables
@@ -140,7 +143,7 @@ def start_stream():
     Displays results in console as a Rich table.
     """
     # Open camera (choose device 0 for default; my robot uses device 2)
-    cap = cv2.VideoCapture(2)  
+    cap = cv2.VideoCapture(0)  
     if not cap.isOpened():
         console.print("[bold red]Camera not opened.[/bold red]")
         return
@@ -162,8 +165,13 @@ def start_stream():
             # Send frame to MCP server and get response
             resp = await send_frame_to_mcp(b64_img)
             pretty_print_response(resp)  # Display results
+            tts = gTTS(text=resp["description"], lang='en', slow=False)
+            tts.save("temp.mp3")
+            data, fs = sf.read("temp.mp3", always_2d=True)
+            sd.play(data, fs)
+            sd.wait()
 
-            await asyncio.sleep(1)  # Wait before sending next frame
+            await asyncio.sleep(0.1)  # Wait before sending next frame
 
     try:
         asyncio.run(stream_loop())  # Run asynchronous streaming loop
