@@ -1,6 +1,6 @@
 # CV_Robot_MCP
 
-**This repo is not maintained anymore as I will concentrate my focus on the AGi-ROS robot and AI server project.
+*This repo is not maintained anymore as I will concentrate my focus on the AGi-ROS robot and AI server project.*
 
 Utilize the VLM in the [CV_MCP_Server](https://huggingface.co/spaces/MCP-1st-Birthday/CV_MCP_Server) HuggingFace Space to "see" the objects through the camera of the robot.
 
